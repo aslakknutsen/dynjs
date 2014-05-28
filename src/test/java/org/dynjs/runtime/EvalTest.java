@@ -3,6 +3,7 @@ package org.dynjs.runtime;
 import static org.fest.assertions.Assertions.*;
 
 import org.dynjs.Config;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class EvalTest extends AbstractDynJSTestSupport {
@@ -14,6 +15,7 @@ public class EvalTest extends AbstractDynJSTestSupport {
     }
 
     @Test
+    @Ignore
     public void testJIT() {
         eval("function hello(){ return 1; }; for(var i = 0; i < 1000000000; i++) { hello(); }");
     }
